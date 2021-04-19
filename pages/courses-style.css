@@ -1,13 +1,45 @@
 
+@media (max-width: 990px) {
+
+  #head-txt{
+    font-size: 0.2rem;
+  }
+
+  #logo{
+    width: 35px;
+    height: 35px;
+  }
+
+  .home-btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80%;
+    width: 70px;
+  }
+
+}
+
+.home-btn{
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 80%;
+  width: 70px;
+}
+
+
 .header{
     color: #407bff;
     background-color: #e6edfb;
     padding: 1% 2%;
-    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    z-index: 1000000;
 }
-.header h1{
-    font-size: 1.5rem;
-
+#head-txt{
+    font-size: 2.3rem;
+    margin-left: 10%;
+    text-align: right;
 }
 
 .section-title {
