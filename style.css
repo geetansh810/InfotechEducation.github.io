@@ -512,7 +512,7 @@ section {
 
 
 #testimonial{
-  background-image: url("./26583.jpg") ;
+  background-image: url("./4907157.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5% 5%;
@@ -551,6 +551,7 @@ section {
 }
 .testimonial .description {
   font-size: 15px;
+  font-weight: bold;
   color: #777;
   text-align: left;
   margin-bottom: 30px;
@@ -580,8 +581,12 @@ section {
   text-align: right;
   color: black;
   text-transform: capitalize;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 auto;
   padding-bottom: 0;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  width: fit-content;
 }
 .testimonial .post {
   text-align: center;

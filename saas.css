@@ -599,14 +599,15 @@ body {
           transform: translateX(-100%);
 }
 
-
 .material-form {
   display: block;
-  width: 100%;
+  width: 300px;
   padding: 50px 40px;
   background-color: #fff;
   font-size: 16px;
   border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(128, 128, 128, 0.35);
+          box-shadow: 4px 4px 4px 0 rgba(128, 128, 128, 0.35);
   overflow: hidden;
 }
 

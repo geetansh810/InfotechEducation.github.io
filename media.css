@@ -39,5 +39,12 @@
     margin-top: 0;
     text-align: center;
   }
+  .login button {
+    margin-top: 5%;
+    background-color: white;
+  }
+  #logo img {
+    width: 30px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
