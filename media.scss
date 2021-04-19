@@ -1,0 +1,54 @@
+
+@media (max-width: 990px){
+
+    .nav-item{
+        background-color: white;
+
+    }
+    a.nav-link {
+        float: none;
+        text-align: center;
+        color: black;
+    }
+
+    #navbar #logo {
+        font-size: 15px;
+    }      
+    .typewriter h3 {
+        margin-top: 10%;
+        font-size: 2.5rem;
+    }      
+    .typewriter h2 {
+        font-size: 1.8rem;
+    }      
+    .main-right {
+        width: 60%;
+        margin-top: -10%;
+    }      
+
+
+
+    #blog-card{
+        margin-top: 60%;
+
+        .card{
+            width: 70%;
+            height: 200px;
+            overflow: auto;
+            h2{
+                font-size: 1rem;
+
+            }
+        }
+    }
+
+    .testimonial{
+        margin-bottom: 60%;
+    }
+
+    .new_footer_area{
+        margin-top: 0;
+        text-align: center;
+    }
+
+}

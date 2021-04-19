@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-eq uiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infosec Education</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="saas.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="container-fluid image ps-0 ms-0">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#hero" id="logo"
+            ><span style="font-size: 1.3em"> &lt;i&gt;</span> Infotech
+            Education</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon"><img src="menu.png" alt="" width="20vw" /></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/courses.html">Courses</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#popular-courses">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#popular-courses">Language</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#popular-courses"
+                      >Data Structure and Algorithm</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#popular-courses">More</a></li>
+                </ul>
+              </li>
+              <li class="login ms-auto me-auto">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalLogin">
+                  LOGIN
+                </button>
+              </li>
+              <li class="join ms-auto me-auto">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalRegister">
+                  JOIN NOW
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center display-6 font-monospace text-info" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+       
+<form class="material-form">
+  <div class="material-form__container">
+    <input class="material-form__input" type="text" placeholder="" id="input-name"/>
+    <label class="material-form__label" form="input-name">Name</label>
+    <div class="material-form__focus-animation"></div>
+  </div>
+  <div class="material-form__container">
+    <input class="material-form__input" type="password" placeholder=" " id="input-password"/>
+    <label class="material-form__label" form="input-password">Password</label>
+    <div class="material-form__focus-animation"></div>
+  </div>
+  <button class="material-form__button">Login</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+<div class="modal fade" id="exampleModalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center display-6 font-monospace text-info" id="exampleModalLabel">Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+       
+<form class="material-form">
+  <div class="material-form__container">
+    <input class="material-form__input" type="text" placeholder="" id="input-name"/>
+    <label class="material-form__label" form="input-name">Name</label>
+    <div class="material-form__focus-animation"></div>
+  </div>
+  <div class="material-form__container">
+    <input class="material-form__input" type="email" placeholder=" " id="input-email"/>
+    <label class="material-form__label" form="input-email">Email</label>
+    <div class="material-form__focus-animation"></div>
+  </div>
+  <div class="material-form__container">
+    <input class="material-form__input" type="password" placeholder=" " id="input-password"/>
+    <label class="material-form__label" form="input-password">Password</label>
+    <div class="material-form__focus-animation"></div>
+  </div>
+  <div class="material-form__container">
+    <input class="material-form__input" type="password" placeholder=" " id="input-password"/>
+    <label class="material-form__label" form="input-password">Enter Password Again</label>
+    <div class="material-form__focus-animation"></div>
+  </div>
+  <p style="font-size: 13px;">Password should be of minimum 8 characters*</p>
+  <button class="material-form__button">Register</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="row" id="hero">
+        <div class="col-md-5">
+          <div class="main-left animate__animated animate__slideInLeft">
+            <div class="typewriter">
+              <h3>Learn</h3>
+            </div>
+            <div class="typewriter">
+              <h2>To Code with Us</h2>
+            </div>
+            <h4>A digital learning platform for programers</h4>
+          </div>
+        </div>
+        <div class="col-md-7 mt-md-5">
+          <img class="main-right" src="Working from anywhere-bro.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5" data-aos="fade-up">
+      <div class="row">
+        <div class="col text-center box-shadow-2">
+          <h4 class="mt-4">
+            Trusted by 500,000 learners working in companies like
+          </h4>
+          <img
+            src="Screenshot_2021-04-17-03-58-54-62.jpg"
+            width="100%"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: rgb(242, 248, 251)">
+      <div class="container pt-5 pb-5" style="margin-top: 5%">
+        <div class="row">
+          <div class="section-title ps-0 mb-5">
+            <h2>Courses</h2>
+            <p>Free Courses</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="skill-card"data-aos="fade-right">
+              <header
+                class="skill-card__header"
+                style="background-color: #e95a28"
+              >
+                <img
+                  class="skill-card__icon"
+                  src="html-5.svg"
+                  alt="HTML5 Logo"
+                />
+              </header>
+              <section class="skill-card__body">
+                <h2 class="skill-card__title">html</h2>
+                <span class="skill-card__duration">50 lessons</span>
+                <ul class="skill-card__knowledge">
+                  <li>In-depth teaching</li>
+                  <li>Practics questions</li>
+                  <li>Quizzes</li>
+                  <li>Certificate</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="skill-card"data-aos="fade-right">
+              <header
+                class="skill-card__header"
+                style="background-color: #5f85ee"
+              >
+                <img
+                  class="skill-card__icon"
+                  src="css-3.svg"
+                  alt="HTML5 Logo"
+                />
+              </header>
+              <section class="skill-card__body">
+                <h2 class="skill-card__title">Css</h2>
+                <span class="skill-card__duration">73 Lessons</span>
+                <ul class="skill-card__knowledge">
+                  <li>In-depth teaching</li>
+                  <li>Practics questions</li>
+                  <li>Quizzes</li>
+                  <li>Certificate</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="skill-card"data-aos="fade-right">
+              <header
+                class="skill-card__header"
+                style="background-color: #eee45f"
+              >
+                <img
+                  class="skill-card__icon"
+                  src="javascript-seeklogo.com.svg"
+                  alt="HTML5 Logo"
+                />
+              </header>
+              <section class="skill-card__body">
+                <h2 class="skill-card__title">JavaScript</h2>
+                <span class="skill-card__duration">95 Lessons</span>
+                <ul class="skill-card__knowledge">
+                  <li>In-depth teaching</li>
+                  <li>Practics questions</li>
+                  <li>Quizzes</li>
+                  <li>Certificate</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="skill-card"data-aos="fade-right">
+              <header
+                class="skill-card__header"
+                style="background-color: #7ad1f3"
+              >
+                <img
+                  class="skill-card__icon"
+                  src="react-seeklogo.com.svg"
+                  alt="HTML5 Logo"
+                />
+              </header>
+              <section class="skill-card__body">
+                <h2 class="skill-card__title">React</h2>
+                <span class="skill-card__duration">35 Lessons</span>
+                <ul class="skill-card__knowledge">
+                  <li>In-depth teaching</li>
+                  <li>Practics questions</li>
+                  <li>Quizzes</li>
+                  <li>Certificate</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="about">
+      <div class="row box-shadow">
+        <div class="col-md-5">
+          <img src="https://i.ibb.co/w4dySWD/01.webp" width="100%" alt="" />
+        </div>
+        <div class="col-md-7 mt-auto mb-auto">
+          <h3 class="big-font">About</h3>
+          <p>
+            Infosec Education is a digital learning platform that offers a
+            quality learning experience to the present-day generation of
+            students. With a plethora of fields and a diverse range of courses
+            (both free and paid) to choose from, dedicated teachers and
+            passionate mentors always available for help, online quizzes, mock
+            test series and other inquisitive features, learning becomes a
+            toddler's game.
+          </p>
+          <p>
+            Learning keeps evolving and so does our algorithm and teaching
+            pattern from time to time, for we strive to serve our customers in
+            the best possible manner. We understand the needs and requirements
+            of our students and hence we regularly work on their feedback and
+            suggestions to deliver them the finest learning experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section id="material-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-1"data-aos="zoom-in">
+              <h3>Web Development</h3>
+              <p>
+                Web development is the building and maintenance of websites;
+                it's the work that happens behind the scenes to make a website
+                look great, work fast and perform well with a seamless user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-2"data-aos="zoom-in">
+              <h3>Graphic Designing</h3>
+              <p>
+                Graphic design is a craft where professionals create visual
+                content to communicate messages. By applying visual hierarchy
+                and page layout techniques, designers use typography and
+                pictures to meet users' specific needs and focus on the logic of
+                displaying elements in interactive designs, to optimize the user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-3"data-aos="zoom-in">
+              <h3>App Development</h3>
+              <p>
+                Mobile app development is the act or process by which a mobile
+                app is developed for mobile devices, such as personal digital
+                assistants, enterprise digital assistants or mobile phones. ...
+                As part of the development process, mobile user interface (UI)
+                design is also essential in the creation of mobile apps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mb-5">
+      <div class="row mt-5">
+        <div class="col-3"><i class="fab fa-java icon-grid"></i></div>
+        <div class="col-3"><i class="fab fa-js icon-grid"></i></div>
+        <div class="col-3"><i class="fab fa-python icon-grid"></i></div>
+        <div class="col-3"><i class="fab fa-php icon-grid"></i></div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-1"><i class=""></i></div>
+        <div class="col-3"><i class="fas fa-database icon-grid"></i></div>
+        <div class="col-3"><i class="fab fa-android icon-grid"></i></div>
+        <div class="col-3"><i class="fab fa-react icon-grid"></i></div>
+        <div class="col-2"><i class="fab fa-angular icon-grid"></i></div>
+      </div>
+    </div>
+
+    <section id="popular-courses" class="courses mt-5">
+      <div class="container">
+        <div class="section-title ps-0">
+          <h2>Courses</h2>
+          <p>Paid Courses</p>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item box-shadow-2" data-aos="flip-left" data-aos-duration="3000">
+              <img
+                src="assets/Static assets-amico.svg"
+                class="img-fluid"
+                alt="..."
+              />
+              <div class="course-content">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h4>Web Development</h4>
+                  <p class="price">$169</p>
+                </div>
+
+                <h3>
+                  <a href="course-details.html">Full-Stack Development</a>
+                </h3>
+                <p>
+                  Learn from basics to pro level. HTML, CSS, JavaScript, React
+                  and NodeJS.
+                </p>
+                <div
+                  class="trainer d-flex justify-content-between align-items-center"
+                >
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img
+                      src="photo6332587399011478398.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <span>Saransh Jain</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="fas fa-users"></i>&nbsp;50 &nbsp;&nbsp;
+                    <i class="fas fa-heart"></i>&nbsp;65
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+          >
+            <div class="course-item box-shadow-2"data-aos="flip-up" data-aos-duration="3000">
+              <img
+                src="assets/Nature on screen-bro.svg"
+                class="img-fluid"
+                alt="..."
+              />
+              <div class="course-content">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h4>Graphic Designing</h4>
+                  <p class="price">$250</p>
+                </div>
+
+                <h3>
+                  <a href="course-details.html">UI UX Designing</a>
+                </h3>
+                <p>
+                  Learn about Photoshop, Illustrator, 3D Animation. Game
+                  Designing with Unity and UnReal Engine.
+                </p>
+                <div
+                  class="trainer d-flex justify-content-between align-items-center"
+                >
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img
+                      src="photo6332587399011478404.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <span>Ayushi Shakya</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="fas fa-users"></i>&nbsp;35 &nbsp;&nbsp;
+                    <i class="fas fa-heart"></i>&nbsp;42
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+          >
+            <div class="course-item box-shadow-2" data-aos="flip-right" data-aos-duration="3000">
+              <img src="assets/Devices-bro.svg" class="img-fluid" alt="..." />
+              <div class="course-content">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h4>App Development</h4>
+                  <p class="price">$180</p>
+                </div>
+
+                <h3><a href="course-details.html">Android & Flutter</a></h3>
+                <p>
+                  Learn about android development with android studio. Also
+                  learn flutter with dart.
+                </p>
+                <div
+                  class="trainer d-flex justify-content-between align-items-center"
+                >
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img
+                      src="photo6332587399011478403.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <span>Geetansh Agrawal</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <i class="fas fa-users"></i>&nbsp;20 &nbsp;&nbsp;
+                    <i class="fas fa-heart"></i>&nbsp;85
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col text-center">
+            <a class="btn more-btn ms-auto me-auto" data-aos="zom-out" href="pages/courses.html">More Courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid" id="color-card">
+      <div class="row">
+        <div class="section-title color-bg">
+          <h2>News</h2>
+          <p>Trending Languages</p>
+        </div>
+
+        <div class="col color-card-bg pb-md-5">
+          <div>
+            <a href="#" class="card education" data-aos="zoom-in" data-aos-duration="3000">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fab fa-java icon-grid text-white"></i>
+              </div>
+              <p>JAVA</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="card credentialing" data-aos="zoom-in" data-aos-duration="3000">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fab fa-js icon-grid"></i>
+              </div>
+              <p>JavaScript</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="card wallet" data-aos="zoom-in" data-aos-duration="3000">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fab fa-python icon-grid"></i>
+              </div>
+              <p>Python</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="card human-resources" data-aos="zoom-in" data-aos-duration="3000">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fab fa-php icon-grid"></i>
+              </div>
+              <p>PHP</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog-card">
+      <div class="card">
+        <h1>Blogs</h1>
+        <h2>
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          voluptatum, totam cupiditate velit molestias dignissimos quisquam iste
+          aliquid, animi ea suscipit? Reprehenderit, non quidem animi vitae,
+          inventore nostrum pariatur maiores porro laudantium tempore rerum?
+          Eligendi tempore ea eum odio distinctio accusamus non quidem officiis!
+          Nam pariatur laudantium et alias explicabo! "
+        </h2>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="testimonial">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="testimonial box-shadow">
+                                    <span class="icon fa fa-quote-left"></span>
+                                    
+            <p class="description">
+                                          Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nullam justo neque, aliquet sit amet
+              elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed
+              sagittis at, sagittis quis neque. Praesent.
+                                      
+            </p>
+                                    
+            <div class="testimonial-content">
+                                          
+              <div class="pic">
+                <img
+                  src="photo6332587399011478399.jpg"
+                  height="100px"
+                  width="100px"
+                  alt=""
+                />
+              </div>
+                                          
+              <h3 class="title">Anshuman Prajapati</h3>
+                                          <span class="post"
+                >President (Asper)</span
+              >
+                                      
+            </div>
+                                
+          </div>
+                              
+        </div>
+        <div class="col-md-3">
+          <div class="testimonial">
+                                    <span class="icon fa fa-quote-left"></span>
+                                    
+            <p class="description">
+                                          Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nullam justo neque, aliquet sit amet
+              elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed
+              sagittis at, sagittis quis neque. Praesent.
+                                      
+            </p>
+                                    
+            <div class="testimonial-content">
+                                          
+              <div class="pic">
+                <img src="photo6332587399011478398.jpg" alt="" />
+              </div>
+                                          
+              <h3 class="title">Saransh jain</h3>
+                                          <span class="post">Web-Master</span>
+                                      
+            </div>
+                                
+          </div>
+                              
+        </div>
+        <div class="col-md-3">
+          <div class="testimonial">
+                                    <span class="icon fa fa-quote-left"></span>
+                                    
+            <p class="description">
+                                          Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nullam justo neque, aliquet sit amet
+              elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed
+              sagittis at, sagittis quis neque. Praesent.
+                                      
+            </p>
+                                    
+            <div class="testimonial-content">
+                                          
+              <div class="pic">
+                <img src="photo6332587399011478404.jpg" alt="" />
+              </div>
+                                          
+              <h3 class="title">Ayushi Shakya</h3>
+                                          <span class="post"
+                >Co-Head (Graphic)</span
+              >
+                                      
+            </div>
+                                
+          </div>
+                              
+        </div>
+        <div class="col-md-3">
+          <div class="testimonial">
+                                    <span class="icon fa fa-quote-left"></span>
+                                    
+            <p class="description">
+                                          Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nullam justo neque, aliquet sit amet
+              elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed
+              sagittis at, sagittis quis neque. Praesent.
+                                      
+            </p>
+                                    
+            <div class="testimonial-content">
+                                          
+              <div class="pic">
+                <img src="photo6332587399011478403.jpg" alt="" />
+              </div>
+                                          
+              <h3 class="title">Geetansh Agrawal</h3>
+                                          <span class="post"
+                >Web Developer</span
+              >
+                                      
+            </div>
+                                
+          </div>
+                              
+        </div>
+      </div>
+    </div>
+
+    <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget company_widget wow fadeInLeft"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                <p>
+                  Don’t miss any updates of our new templates and extensions.!
+                </p>
+                <form
+                  action="#"
+                  class="f_subscribe_two mailchimp"
+                  method="post"
+                  novalidate="true"
+                  _lpchecked="1"
+                >
+                  <input
+                    type="text"
+                    name="EMAIL"
+                    class="form-control memail"
+                    placeholder="Email"
+                  />
+                  <button class="btn btn_get btn_get_two" type="submit">
+                    Subscribe
+                  </button>
+                  <p class="mchimp-errmessage" style="display: none"></p>
+                  <p class="mchimp-sucmessage" style="display: none"></p>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget about-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.4s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.4s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Android App</a></li>
+                  <li><a href="#">ios App</a></li>
+                  <li><a href="#">Desktop</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">My tasks</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget about-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.6s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.6s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Term &amp; conditions</a></li>
+                  <li><a href="#">Reporting</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Support Policy</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget social-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.8s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.8s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                <div class="f_social_icon">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+                  <a href="#" class="fab fa-pinterest"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-7">
+              <p class="mb-0 f_400">© Asper Inc.. 2021 All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 col-sm-5 text-right">
+              <p>
+                Made by Geetansh Agrawal with in
+                <a
+                  href="#"
+                  style="text-decoration: none; color: rgb(246, 143, 143)"
+                  >Asper</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/75395e9e73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js">
+    </script>
+  </body>
+</html>
